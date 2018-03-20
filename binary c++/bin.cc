@@ -1,8 +1,11 @@
 #include "bin.hh"
 
 int main(){
+    
+    clock_t t;  t = clock();
+    
     std::cout << "Binary Runner\n";
-
+    
     for(int i = 0; i < 10; i++){
         Gen.push_back(uni(rng));
         std::cout << "int: " <<Gen[i] << " and in binary: " << toBinary(Gen[i]) << std::endl;
@@ -27,5 +30,8 @@ int main(){
         int out = uni(rng);
         std::cout << "Random value: " << out << " and in hex: " << std::hex << out << std::endl;        
     }
+    
+    t = clock() - t;
+    printf ("\nProgram took %f seconds.\n",((float)t)/CLOCKS_PER_SEC);
     return 0;
 }

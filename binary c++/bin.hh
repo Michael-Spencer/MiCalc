@@ -1,8 +1,8 @@
-#include <iostream>
-#include <cstdlib>
-#include <vector>
-#include <string>
-#include <random>
+#include <iostream> //outputs
+#include <vector>   //vectors...
+#include <string>   //strings...
+#include <random>   //all the random stuff
+#include <time.h>   //clock_t, clock, CLOCKS_PER_SEC 
 
 
 //functions
