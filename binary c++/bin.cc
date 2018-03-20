@@ -22,5 +22,10 @@ int main(){
         }
         std::cout << std::endl;
     }
+    
+    for(int i = 0; i < 10; i++){
+        int out = uni(rng);
+        std::cout << "Random value: " << out << " and in hex: " << std::hex << out << std::endl;        
+    }
     return 0;
 }
